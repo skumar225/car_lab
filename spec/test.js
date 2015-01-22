@@ -44,7 +44,8 @@ describe('Car', function(){
   describe('#sale', function(){
     it('should move currentOwner to previousOwners array', function(){
       myCar.sale("Charlie");
-      expect(myCar.previous_owners[0]).to.equal("Manufacturer");
+      expect(myCar.previous_owner[0]).to.equal("Manufacturer");
+      console.log(myCar.previous_owner[0]);
     });
 
     it('should update currentOwner with the new owner', function(){
